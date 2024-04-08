@@ -734,7 +734,7 @@ vows
     },
     "some string object": {
       topic: function() {
-        return Cookie.parse(new String("")) ?? SHOULD_BE_UNDEFINED;
+        return Cookie.parse(new String()) ?? SHOULD_BE_UNDEFINED;
       },
       "is empty": function(c) {
         assert.equal(c, SHOULD_BE_UNDEFINED);

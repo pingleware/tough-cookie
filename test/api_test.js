@@ -89,7 +89,8 @@ vows
         topic(jar) {
           jar
             .setCookie("foo=bar", "http://example.com")
-            .then(c => this.callback(null, c), this.callback);
+            .then(c => this.callback(null, c), this.callback)
+            .catch(new Error(err));
         },
         "resolves to a Cookie"(cookie) {
           assert.ok(cookie instanceof Cookie);
@@ -101,7 +102,8 @@ vows
         topic(jar) {
           jar
             .getCookies("http://example.com")
-            .then(cookies => this.callback(null, cookies), this.callback);
+            .then(cookies => this.callback(null, cookies), this.callback)
+            .catch(new Error(err));
         },
         "resolves to an array of cookies"(cookies) {
           assert.ok(Array.isArray(cookies), "not an array");
@@ -115,7 +117,8 @@ vows
         topic(jar) {
           jar
             .getCookieString("http://example.com")
-            .then(cookies => this.callback(null, cookies), this.callback);
+            .then(cookies => this.callback(null, cookies), this.callback)
+            .catch(new Error(err));
         },
         "resolves to a string"(cookies) {
           assert.ok(typeof cookies === "string", "not a string");
@@ -125,7 +128,8 @@ vows
         topic(jar) {
           jar
             .getSetCookieStrings("http://example.com")
-            .then(cookies => this.callback(null, cookies), this.callback);
+            .then(cookies => this.callback(null, cookies), this.callback)
+            .catch(new Error(err))
         },
         "resolves to a an array of strings"(cookies) {
           assert.ok(Array.isArray(cookies), "not an array");
@@ -137,7 +141,8 @@ vows
       },
       removeAllCookies: {
         topic(jar) {
-          jar.removeAllCookies().then(this.callback, this.callback);
+          jar.removeAllCookies().then(this.callback, this.callback)
+          .catch(new Error(err));
         },
         "resolves to undefined"(arg) {
           assert.ok(arg === undefined, "was not undefined");
@@ -147,7 +152,8 @@ vows
         topic(jar) {
           jar
             .serialize()
-            .then(data => this.callback(null, data), this.callback);
+            .then(data => this.callback(null, data), this.callback)
+            .catch(new Error(err));
         },
         "resolves to an object"(data) {
           assert.ok(data instanceof Object, "not an object");

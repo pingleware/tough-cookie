@@ -4,6 +4,12 @@
     "email": "jstash@gmail.com",
     "website": "https://github.com/stash"
   },
+  "maintainers": [
+    {
+      "name": "PRESSPAGE ENTERAINMENT INC dba PINGLEWARE <maintainers@pingleware.work>",
+      "url": "https://pinglewarw.support"
+    }
+  ],
   "contributors": [
     {
       "name": "Ivan Nikulin",
@@ -55,7 +61,7 @@
     }
   ],
   "license": "BSD-3-Clause",
-  "name": "tough-cookie",
+  "name": "@pingleware/tough-cookie",
   "description": "RFC6265 Cookies and Cookie Jar for node.js",
   "keywords": [
     "HTTP",
@@ -68,13 +74,13 @@
     "RFC2965"
   ],
   "version": "5.0.0-rc.1",
-  "homepage": "https://github.com/salesforce/tough-cookie",
+  "homepage": "https://github.com/pingleware/tough-cookie",
   "repository": {
     "type": "git",
-    "url": "git://github.com/salesforce/tough-cookie.git"
+    "url": "git://github.com/pingleware/tough-cookie.git"
   },
   "bugs": {
-    "url": "https://github.com/salesforce/tough-cookie/issues"
+    "url": "https://pingleware.support"
   },
   "main": "./dist/cookie/index.js",
   "types": "./dist/cookie/index.d.ts",

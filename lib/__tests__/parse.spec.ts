@@ -388,7 +388,7 @@ describe('Cookie.parse', () => {
     },
     // some string object
     {
-      input: new String(''),
+      input: new String(),
       output: undefined,
     },
     // some empty string object

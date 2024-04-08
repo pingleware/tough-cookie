@@ -428,7 +428,7 @@ export class Cookie {
     this.secure = options.secure ?? cookieDefaults.secure
     this.httpOnly = options.httpOnly ?? cookieDefaults.httpOnly
     this.extensions = options.extensions ?? cookieDefaults.extensions
-    this.creation = options.creation ?? cookieDefaults.creation
+    //this.creation = options.creation ?? cookieDefaults.creation
     this.hostOnly = options.hostOnly ?? cookieDefaults.hostOnly
     this.pathIsDefault = options.pathIsDefault ?? cookieDefaults.pathIsDefault
     this.lastAccessed = options.lastAccessed ?? cookieDefaults.lastAccessed
